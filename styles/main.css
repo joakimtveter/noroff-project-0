@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root {
+    --color-primary-300: hsl(209, 24%, 40%);
+    --color-primary-700: hsl(226, 38%, 18%);
+    --color-primary-800: hsl(226, 38%, 11%);
+    
+    --color-accent-400: hsl(44, 60%, 50%);
+    
+    --color-neutral-100: hsl(0, 0%, 97%);
+    --color-neutral-200: hsl(0, 0%, 95%);
+    --color-neutral-300: hsl(0, 0%, 87%);
+    --color-neutral-900: hsl(0, 0%, 5%);
+
+    --font-body: 'Open Sans', Arial, Helvetica, sans-serif;
+    --font-heading: 'Roboto', Arial, Helvetica, sans-serif;
+
+    --fs1: 0.3125rem ; /* 5px */
+    --fs2: 0.4375rem; /* 7px */
+    --fs3: 0.5625rem; /* 9px */
+    --fs4: 0.75rem; /* 12px */
+    --fs5: 1rem; /* 16px */
+    --fs6: 1.3125rem; /* 21px */
+    --fs7: 1.75rem; /* 28px */
+    --fs8: 2.3125rem; /* 37px */
+    --fs9: 3.125rem; /* 50px */
+    --fs10: 4.1875rem; /* 67px */
+    --fs11: 5.5625rem; /* 89px */
+    --fs12: 7.4375rem; /* 119px */
+    --fs13: 9.9375rem; /* 159px */
+    --fs14: ; /* 5px */
+}
+
+/* Copied from https://webaim.org/techniques/css/invisiblecontent/ */
+.sr-only{
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+} 
+
+body {
+    font-family: var(--font-body);
+    
+}

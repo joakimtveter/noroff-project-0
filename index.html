@@ -1,11 +1,62 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My first website</title>
-  </head>
-  <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
-    <p>Testing branch2</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>GameHub - The universe of games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <header>
+    <a class="branding"><span class="sr-only">GameHub - The universe of games</span><img src="images/gamehub-logo.png" alt="Go to GameHub front page"></a>
+    <form class="main-search" action="/search.html" method="GET">
+      <input class="main-search__field" type="search" placeholder="Search all of GameHub">
+      <button type="submit" class="main-search__button">Search</button>
+    </form>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Wishlist</a>
+          <a href="#">Log in</a>
+          <a href="#">Basket</a>
+        </li>
+      </ul>
+    </nav>
+    <nav>
+      <ul>
+        <li><a href="#">Purchase Games</a></li>
+        <li><a href="#">Sell your games</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="banner">
+    <p> <span>Summer Sale</span> starts in: <time><span>00</span>:<span>00</span>:<span>00</span>:<span>00</span></time></p>
+  </section>
+  <footer class="footer" id="footer">
+    <img src="images/logo-footer.png" alt="">
+    <nav class="social-nav">
+      <ul>
+        <li><a href="#"><span class="sr-only">Facebook</span></a></li>
+        <li><a href="#"><span class="sr-only">Instagram</span></a></li>
+        <li><a href="#"><span class="sr-only">Discord</span></a></li>
+      </ul>
+    </nav>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="#">My account</a></li>
+        <li><a href="#">My Wishlist</a></li>
+        <li><a href="#">Terms &amp; Condition</a></li>
+        <li><a href="#"><abbr title="Frequently asked Questions">FAQ</abbr></a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="to-the-top"> <span class="sr-only">To the top</span></a>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
 </html>
