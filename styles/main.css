@@ -6,8 +6,6 @@ padding: 0;
 box-sizing: border-box;
 }
 
-@import "partials/colors.css";
-
 :root {
     /* Color Pallet */
     --color-primary-300: hsl(209, 24%, 40%);
