@@ -6,7 +6,10 @@ padding: 0;
 box-sizing: border-box;
 }
 
+@import "partials/colors.css";
+
 :root {
+    /* Color Pallet */
     --color-primary-300: hsl(209, 24%, 40%);
     --color-primary-700: hsl(226, 38%, 18%);
     --color-primary-800: hsl(226, 38%, 11%);
@@ -17,7 +20,8 @@ box-sizing: border-box;
     --color-neutral-200: hsl(0, 0%, 95%);
     --color-neutral-300: hsl(0, 0%, 87%);
     --color-neutral-900: hsl(0, 0%, 5%);
-
+    
+    /* Typography */
     --font-body: 'Open Sans', Arial, Helvetica, sans-serif;
     --font-heading: 'Roboto', Arial, Helvetica, sans-serif;
 
@@ -34,11 +38,17 @@ box-sizing: border-box;
     --fs11: 5.5625rem; /* 89px */
     --fs12: 7.4375rem; /* 119px */
     --fs13: 9.9375rem; /* 159px */
-    --fs14: ; /* 5px */
+    --fs14: 13.25rem; /* 212px */
 }
 
-/* Copied from https://webaim.org/techniques/css/invisiblecontent/ */
+
+/* ************************* */
+/* *     ACCESSABILITY     * */
+/* ************************* */
+
+
 .sr-only{
+    /* Copied from https://webaim.org/techniques/css/invisiblecontent/ */
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
     height: 1px;
@@ -51,5 +61,5 @@ box-sizing: border-box;
 
 body {
     font-family: var(--font-body);
-    
+    color: var(--color-accent-400);
 }
